@@ -1,0 +1,12 @@
+# Local data: bookings, client details and demo passwords never go in git
+data/amare.db
+data/amare.db-*
+data/seed.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Tooling / OS
+.omc/
+.DS_Store

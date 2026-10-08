@@ -1,0 +1,92 @@
+{
+  "_readme": "Template for demo accounts (no passwords). On first start with an empty database, server.py copies this to data/seed.json with a random password for each account and loads it. data/seed.json and data/amare.db are git-ignored. Never use demo accounts on a live site.",
+  "users": [
+    {
+      "role": "admin",
+      "name": "Studio Manager",
+      "email": "admin@amare.test"
+    },
+    {
+      "role": "provider",
+      "provider_id": "founder",
+      "name": "Founder Name",
+      "email": "founder@amare.test"
+    },
+    {
+      "role": "provider",
+      "provider_id": "rn1",
+      "name": "Provider One",
+      "email": "rn1@amare.test"
+    },
+    {
+      "role": "provider",
+      "provider_id": "np1",
+      "name": "Provider Two",
+      "email": "np1@amare.test"
+    },
+    {
+      "role": "provider",
+      "provider_id": "esthetician",
+      "name": "Provider Three",
+      "email": "esthetician@amare.test"
+    },
+    {
+      "role": "provider",
+      "provider_id": "rn2",
+      "name": "Provider Four",
+      "email": "rn2@amare.test"
+    },
+    {
+      "role": "provider",
+      "provider_id": "pa1",
+      "name": "Provider Five",
+      "email": "pa1@amare.test"
+    },
+    {
+      "role": "client",
+      "name": "Demo Client",
+      "email": "client@amare.test",
+      "phone": "(555) 010-0100"
+    }
+  ],
+  "sample_bookings": [
+    {
+      "client_email": "client@amare.test",
+      "provider_id": "founder",
+      "service_id": "consult",
+      "days_from_today": 2,
+      "time": "11:00"
+    },
+    {
+      "client_email": "client@amare.test",
+      "provider_id": "rn1",
+      "service_id": "neurotoxin",
+      "days_from_today": 9,
+      "time": "14:00"
+    },
+    {
+      "client_email": "client@amare.test",
+      "provider_id": "esthetician",
+      "service_id": "peel",
+      "days_from_today": -20,
+      "time": "10:00",
+      "status": "completed"
+    },
+    {
+      "client_email": "guest@example.com",
+      "name": "Guest Booker",
+      "provider_id": "founder",
+      "service_id": "filler",
+      "days_from_today": 3,
+      "time": "14:00"
+    },
+    {
+      "client_email": "guest2@example.com",
+      "name": "Walkin Guest",
+      "provider_id": "np1",
+      "service_id": "booster",
+      "days_from_today": 1,
+      "time": "10:00"
+    }
+  ]
+}
